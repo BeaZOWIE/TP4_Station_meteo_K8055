@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------
+
+#ifndef FonctionH
+#define FonctionH
+
+class CarteK8055
+{
+private:
+	// Déclaration des attributs :
+			long adr;		// Attribut adr
+			bool etat;		// Attribut etat
+
+public:
+	// Déclaration des méthodes :
+	// Déclaration du constructeur :
+		CarteK8055(long adrCard);
+
+	// Déclaration du destructeur :
+		~CarteK8055();
+
+	// Déclaration de getEtat :
+		bool getEtat();
+
+	// Déclaration de lireAna :
+		long lireAna(long channel);
+};
+
+//---------------------------------------------------------------------------
+#endif
