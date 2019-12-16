@@ -1,0 +1,37 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "K8055.h"
+#include "Include/K8055D.h"
+
+#pragma package(smart_init)
+//---------------------------------------------------------------------------
+K8055::K8055()
+{
+
+}
+
+K8055::~K8055()
+{
+    CloseDevice();
+}
+
+bool K8055::Connexion(int addr)
+{
+	int success;
+	success = OpenDevice(addr);
+	if (success == -1)
+	{
+        return false;
+	}
+
+    return true;
+}
+
+long K8055::Lecture(int addr)
+{
+	data = ReadAnalogChannel(2);
+	data = (data / 255) * 5
+    return data;
+}

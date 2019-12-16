@@ -1,0 +1,27 @@
+﻿[Timer1]
+Coordinates=124,174,54,36
+
+[Label1]
+Coordinates=10,10,53,58
+
+[RadioGroup1]
+Coordinates=10,78,91,58
+Visible=True
+
+[Button1]
+Coordinates=73,10,59,58
+
+[CheckBoxSK5]
+Coordinates=140,10,114,58
+
+[CheckBoxSK6]
+Coordinates=111,78,114,58
+
+[]
+Coordinates=302,1,91,36
+
+[Module Settings]
+ModelLayerNames=
+ActiveLayerNames=
+EditingLayerName=
+
